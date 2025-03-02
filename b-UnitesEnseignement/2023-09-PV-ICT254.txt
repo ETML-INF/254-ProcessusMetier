@@ -1,0 +1,94 @@
+Séance coordination ICT 254 / 2023-09-28
+CPNV : CRT, MWA                     ETML : AGX, BSI, SOI, absent XCL
+====================================================================
+
+Contacter OpenNet pour implémenter et utiliser Odoo.
+Prix pour la formation ... gratuit semble-t-il :)
+Existe-t-il des modèles existants de PME (éventuellement IT) de tests ? Oui
+Il existe un camion OdooLab.
+
+Il faut contacter Odoo par s'inscrire => retourner un jeu à OpenNet.
+Template à créer, à recopier, instance par élève.
+
+OpenNet se propose de former nos formateurs à travers de la mise en pratique.
+Approche "As it is" : 
+1) utiliser un package Odoo et ses flux standards
+2) représenter des workflows / swimlines (bonita / diagram.io à vérifier)
+3) faire un processus depuis la préVente jusqu'au SAV.
+
+1/2 intro à Odoo c'est sans problème
+=> Mardi 17.10 matin / mercredi 18.10 possible / 20.10 possible
+=> Au maximum
+=> 200.- / h
+=> 3 he de présence 1h de prép
+=> 8h30 - 12h (30 min de pause)
+
+
+Déroulement du module :
+1)
+Approche globale et un peu théorique pour prendre en main des processus métiers.
+S'appuyer sur une entreprise "Type".
+Modéliser selon UML ou directement selon Odoo.
+
+2)
+En groupe d'apprentis, configurer l'ERP dans une optique IT (HelpDesk ou Agence Web).
+
+3)
+Evaluation (DEP) encore à définir, mais intérêt pour une partie théorique (X%)
+suivie d'une partie pratique en groupe (100-X%).
+
+Next steps :
+------------
+ETML => Approcher OpenNet
+
+CPNV => Ebaucher des modèles de business HelpDesk et Agence Web
+
+Tous => Avant le 13 octobre, se revoir en séance et partager
+
+Tous => Deadline : Début du module le 6.11
+
+
+
+Séance coordination ICT 254 / 2023-10-12
+CPNV : CRT, MWA                  ETML : AGX, BSI / SOI & XCL absents
+====================================================================
+
+Le cours Odoo est posé au 20.10 à l'ETML.
+
+BSI verra CRT et MWA au CPNV d'Yverdon le 27.10 à 8h15 pour transmission de know-how.
+
+Le cours ICT 254 prendra forme et sens après la formation Odoo.
+
+BSI est en contact avec l'ES-IG (MM. Bruyndonckx et Gerber) afin d'obtenir du know-how "Business" pour les aspect ECOE du module.
+
+
+
+Séance coordination ICT 254 / 2023-10-20
+ETML :BSI, SOI, XCL - AGX absents
+========================================
+
+Déroulement du module revisité :
+
+1)
+Approche globale et sans théorie pour prendre en main Odoo avec Scale-Up => ~10p
+Le jeu existe en PDF FR à télécharger
+
+2)
+Mise en commun, apports théorique liés aux processus, puis schématisation de flux métiers
+
+3)
+En groupe d'apprentis (max 3), configurer l'ERP dans une optique de business avec produits et services 
+ - Exemples : 
+	1) IT (Discounter avec prestations de dépannage/maintenance/configuration).
+	2) Cuisiniste (Vente d'équipements, de cusiine clé en main et de sur mesure).
+	3) Garage automobile (vente de pièces, de réparation, de maintenance, pneus)
+	4) ...
+
+4)
+Evaluation (DEP) encore à définir, mais intérêt pour une partie théorique (~40%)
+suivie d'une partie pratique en groupe (~60%).
+
+La partie pratique pourrait être évaluée sur la base de "use cases" à appliquer directemnt sur le modèle construit avec Odoo.
+Comme chaque idée d'entreprise propose de sproduits et services, les "use cases" seraient équivalents.
+Si la démo fonctionne à 80% => 5 
+Si la démo focntionne à 60% => 4
