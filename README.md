@@ -2,6 +2,30 @@
 
 Le chemin vers le succès est tracé [ici](https://roadmap.sh/r/embed?id=67c07477580201fc7743a886)
 
+## Le marché local du jeu de plateau
+### Neon Rift Games : Night Run ([ERP](https://edu-neonriftgames.odoo.com/odoo))  
+Maël  
+Matias  
+Brendan  
+### NewGame+ : Profemon ([ERP](https://edu-newgameplus.odoo.com/odoo))  
+Francisco  
+Nelson  
+Mina  
+### Swisscraft : Warhammer ([ERP](https://edu-swisscraft.odoo.com/odoo))  
+Meron  
+Christopher  
+Somchai  
+### Titan Motors : F1 Racing ([ERP](https://edu-titanmotors.odoo.com/odoo))  
+Theo  
+Diogo  
+Jessica  
+### Unko Games: Crash Octopus ([ERP](https://edu-unkogames.odoo.com/odoo))  
+Luca  
+Veronika  
+### Big Boy Game: Granma's well ([ERP](https://edu-bigboygames.odoo.com/odoo))  
+Vincent  
+Rayan  
+
 ## Odoo
 
 - Inscrivez-vous sur [Odoo](https://www.odoo.com/fr_FR) avec votre email **`prénom.nom@eduvaud.ch`** (et **PAS** `px23trd@eduvaud.ch`)
