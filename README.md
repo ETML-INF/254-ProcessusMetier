@@ -26,6 +26,10 @@ Veronika
 Vincent  
 Rayan  
 
+## Fournitures
+
+Le fournisseur unique de composants pour les entreprises locales est l'[ETML Store](https://edu-etml2.odoo.com/)
+
 ## Odoo
 
 - Inscrivez-vous sur [Odoo](https://www.odoo.com/fr_FR) avec votre email **`prénom.nom@eduvaud.ch`** (et **PAS** `px23trd@eduvaud.ch`)
