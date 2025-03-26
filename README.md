@@ -30,6 +30,13 @@ Rayan
 
 Le fournisseur unique de composants pour les entreprises locales est l'[ETML Store](https://edu-etml2.odoo.com/)
 
+Vous pouvez payer vos achats sur le store avec la carte de crédit magique:
+
+|||  
+|---|---|  
+| Numéro| 4242 4242 4242 4242|  
+| Date de validité| 12/34|  
+| CVC| 123|  
 ## Odoo
 
 - Inscrivez-vous sur [Odoo](https://www.odoo.com/fr_FR) avec votre email **`prénom.nom@eduvaud.ch`** (et **PAS** `px23trd@eduvaud.ch`)
