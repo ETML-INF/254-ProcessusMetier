@@ -22,7 +22,7 @@ Jessica
 ### Unko Games: Crash Octopus ([ERP](https://edu-unkogames.odoo.com/odoo))  
 Luca  
 Veronika  
-### Big Boy Game: Granma's well ([ERP](https://edu-bigboygames.odoo.com/odoo))  
+### Big Boy Game: Granma's will ([ERP](https://edu-bigboygames.odoo.com/odoo))  
 Vincent  
 Rayan  
 
