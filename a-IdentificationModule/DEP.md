@@ -4,7 +4,7 @@ L'évaluation est basée sur 2 Eléments:
 
 | Forme | Portée | Durée | Moyens d'aide | Pondération | Semaine |
 |---|---|---|---|---|---|
-| Test écrit | Principes de base de l'économie d'entreprise<br>Représentation de processus (BPMN)| 1h | Aide mémoire personnel: une feuille A4 | 50%|6|
+| Test écrit | Principes de base de l'économie d'entreprise<br>Représentation de processus (BPMN)<ul><li>Compréhension</li><li>Rédaction</li></ul>| 1h | Aide mémoire personnel: une feuille A4 | 50%|6|
 | Présentation | Investor Pitch | 20+10 min par groupe | Notes personnelles | 50% | 8 |
 
 <small>_La pondération est appliquée aux notes arrondies au dixième._</small>
