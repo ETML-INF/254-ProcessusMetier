@@ -25,3 +25,29 @@ Dès aujourd'hui, toutes les entreprises ont l'obligation de tenir à jour un d�
 Les entreprises qui gèrent leurs ressources avec Odoo sont tenues de le faire au moyen de l'application "Feuilles de temps".
 
 Des contrôles seront effectués par le département de l'économie, les contrevenants seront sanctionnés.
+
+## Edition du 16.05.2025
+
+### Attribution des fonds d'investissement
+
+Vendredi 23 mai se tiendra une séance d'attribution des fonds d'investissement cantonaux.
+Six jeunes entreprises locales sont candidates.
+Elles présenteront chacune en 15 minutes
+- Leur produit phare
+- Leur modèle d'affaire
+- Leur plan pour le lancement de leurs activités dans notre canton, avec un accent particulier mis sur:
+  - L'impact qu'ils pourraient avoir sur l'économie locale (emploi, partenariats, utilisation de locaux, revenus fiscaux, ...)
+  - Les moyens mis en places en vue de l'obtention d'une certification ISO 9000
+
+L'assistance aura ensuite l'opportunité de questionner les entrepreur·euse·s durant 5 minutes.  
+L'horaire des présentations est le suivant:
+| Heure | Entreprise|
+|---|---|
+|13h15 | Swisscraft
+|13h40 | NewGame+
+|14h05 | Unko Games
+|14h30 | Neon Rift Games
+|15h10 | Big Boy Game
+|15h35 | Titan Motors
+
+L'attribution des fonds d'investissement aura lieu dès la fin de la dernière présentation
