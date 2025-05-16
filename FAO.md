@@ -43,11 +43,11 @@ L'assistance aura ensuite l'opportunité de questionner les entrepreur·euse·s 
 L'horaire des présentations est le suivant:
 | Heure | Entreprise|
 |---|---|
-|13h15 | Swisscraft
-|13h40 | NewGame+
-|14h05 | Unko Games
-|14h30 | Neon Rift Games
-|15h10 | Big Boy Game
-|15h35 | Titan Motors
+|13h15 | Big Boy Game 
+|13h40 | Neon Rift Games 
+|14h05 | Titan Motors 
+|14h30 | Swisscraft 
+|15h10 | NewGame+ 
+|15h35 | Unko Games 
 
 L'attribution des fonds d'investissement aura lieu dès la fin de la dernière présentation
