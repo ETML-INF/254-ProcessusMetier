@@ -28,8 +28,7 @@ Business Model
 Business Plan
 <hr>
 
-  - [ ] Chaque chapitre du business plan, occupe correctement au minimum une page de document  
-    _Votre business plan a besoin d'être étoffé_
+  - [x] Chaque chapitre du business plan, occupe correctement au minimum une page de document  
   - [X] Le business plan couvre les huit chapitres énoncés par le support de cours  
   - [X] Le Business Plan contient un chapitre qui présente la formule juridique choisie et explique les raisons de ce choix  
 
