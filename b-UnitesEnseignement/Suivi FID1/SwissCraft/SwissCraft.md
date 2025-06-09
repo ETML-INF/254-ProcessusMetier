@@ -3,10 +3,10 @@
   - [X] J'ai accès à la GED de votre entreprise  
   - [x] La page de garde du catalogue contient le nom et le logo de l'entreprise  
   - [X] La racine de la GED est divisée en trois: 'Publié', 'En cours' et 'Archives'. Il n'y a aucun autre dossier   
-  - [ ] Le dossier "Publié" de la GED ne contient que des fichier en lecture seule (pdf, png)
+  - [x] Le dossier "Publié" de la GED ne contient que des fichier en lecture seule (pdf, png)
   - [x] Le catalogue est publié dans la GED  
-  - [ ] Le document 'fabrication' contient la BOM du produit  
-  - [ ] Le document 'fabrication' contient la liste du matériel nécessaire à la fabrication  
+  - [x] Le document 'fabrication' contient la BOM du produit  
+  - [x] Le document 'fabrication' contient la liste du matériel nécessaire à la fabrication  
   - [x] Le produit est présenté sur une page, avec un dessin illustratif, accompagné d'un texte descriptif  
 
 Prototype
@@ -32,8 +32,8 @@ Business Plan
 Forme juridique
 <hr>
 
-  - [ ] Chaque membre du groupe est capable d'expliquer et de défendre le business model  
-  - [ ] Chaque membre du groupe est capable d'expliquer et de défendre le business plan 
+  - [x] Chaque membre du groupe est capable d'expliquer et de défendre le business model  
+  - [x] Chaque membre du groupe est capable d'expliquer et de défendre le business plan 
 
 Financement
 <hr>
@@ -47,9 +47,19 @@ Financement
 Présence sur le net 
 <hr>
 
-  - [ ] Chaque membre de l'équipe est capable d'expliquer le process des autres  
+  - [x] Chaque membre de l'équipe est capable d'expliquer le process des autres  
   - [x] Le ou la process owner est visible sur la présentation du processus.  
   - [x] Les 6 processus sont publiés dans GED  
   - [x] Les processus ont été validés  
 
 Startup   (niveau minimum)
+
+
+Modalité d'évaluation: 27 cases à cocher, je tolère deux ratés
+
+Résultat: 
+- C'est tout bon bravo. Vous avez bien complété toutes les attentes de ce projet.
+-  Mon seul regret, c'est la panne de l'imprimante 3D, qui a empêché de mener à bien votre idée qui était très intéressante.
+  
+
+## _Projet validé_

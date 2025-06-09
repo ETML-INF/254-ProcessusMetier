@@ -36,8 +36,8 @@ Business Plan
 Forme juridique
 <hr>
 
-  - [ ] Chaque membre du groupe est capable d'expliquer et de défendre le business model  
-  - [ ] Chaque membre du groupe est capable d'expliquer et de défendre le business plan 
+  - [x] Chaque membre du groupe est capable d'expliquer et de défendre le business model  
+  - [x] Chaque membre du groupe est capable d'expliquer et de défendre le business plan 
 
 Financement
 <hr>
@@ -51,9 +51,18 @@ Financement
 Présence sur le net 
 <hr>
 
-  - [ ] Chaque membre de l'équipe est capable d'expliquer le process des autres  
-  - [ ] Le ou la process owner est visible sur la présentation du processus.  
-  - [ ] Les 6 processus sont publiés dans GED  
-  - [ ] Les processus ont été validés  
+  - [x] Chaque membre de l'équipe est capable d'expliquer le process des autres  
+  - [x] Le ou la process owner est visible sur la présentation du processus.  
+  - [x] Les 6 processus sont publiés dans GED  
+  - [x] Les processus ont été validés  
 
 Startup   (niveau minimum)
+
+
+Modalité d'évaluation: 27 cases à cocher, je tolère deux ratés
+
+Résultat: 
+- C'est tout bon, vous avez validé toutes les cases
+- Mon seul regret dans ce projet est que vous n'avez pas eu l'occasion d'aller jusque tout au bout de la construction du jeu à cause de la panne d'imprimante, 3D
+
+## _Projet validé_
