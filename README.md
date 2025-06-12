@@ -7,35 +7,35 @@ Le chemin vers le succès est tracé [ici](https://roadmap.sh/r/embed?id=67c0747
 Maël  
 Matias  
 Brendan  
-<small>[Status actuel](b-UnitesEnseignement/Suivi%20FID1/NeonRiftGames/Neon%20Rift%20Games.md)</small>
+<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/NeonRiftGames/Neon%20Rift%20Games.md)</small>
 
 ### NewGame+ : Profemon ([ERP](https://edu-newgameplus.odoo.com/odoo))  
 Francisco  
 Nelson  
 Mina  
-<small>[Status actuel](b-UnitesEnseignement/Suivi%20FID1/NewGame+/NewGame+.md)</small>
+<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/NewGame+/NewGame+.md)</small>
 
 ### Swisscraft : Warhammer ([ERP](https://edu-swisscraft.odoo.com/odoo))  
 Meron  
 Christopher  
 Somchai  
-<small>[Status actuel](b-UnitesEnseignement/Suivi%20FID1/SwissCraft/SwissCraft.md)</small>
+<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/SwissCraft/SwissCraft.md)</small>
 
 ### Titan Motors : F1 Racing ([ERP](https://edu-titanmotors.odoo.com/odoo))  
 Theo  
 Diogo  
 Jessica  
-<small>[Status actuel](b-UnitesEnseignement/Suivi%20FID1/TitanMotors/Titan%20Motors.md)</small>
+<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/TitanMotors/Titan%20Motors.md)</small>
 
 ### Unko Games: Crash Octopus ([ERP](https://edu-unkogames.odoo.com/odoo))  
 Luca  
 Veronika  
-<small>[Status actuel](b-UnitesEnseignement/Suivi%20FID1/UnkoGames/UnkoGames.md)</small>
+<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/UnkoGames/UnkoGames.md)</small>
 
 ### Big Boy Game: Granma's will ([ERP](https://edu-bigboygames.odoo.com/odoo))  
 Vincent  
 Rayan  
-<small>[Status actuel](b-UnitesEnseignement/Suivi%20FID1/BigBoyGame/Big%20Boy%20Game.md)</small>
+<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/BigBoyGame/Big%20Boy%20Game.md)</small>
 
 
 ## Fournitures
