@@ -60,5 +60,6 @@ Résultat:
 - Le fichier "Business Model.docx" est vide! J'imagine qu'il s'agit d'une erreur de copie du fichier.
 - Corrigez ces deux erreurs avant mardi 10 juin à 10h, faute de quoi le projet ne pourra pas être validé
 
+- Problèmes corrigés dans les temps
 
 ## _Projet validé_
