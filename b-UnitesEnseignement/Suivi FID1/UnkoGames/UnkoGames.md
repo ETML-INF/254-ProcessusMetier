@@ -16,9 +16,9 @@ Prototype
 Business Model
 <hr>
 
-  - [ ] Le Business Model est publié, propre et bien présenté  
-  - [ ] Il couvre tout les aspects cités dans le [support de cours](https://github.com/ETML-INF/254-ProcessusMetier/blob/main/b-UnitesEnseignement/ECOE/S-254-PrincipesECOE.pdf)  
-  - [ ] Il totalise un minimum de 500 mots  
+  - [X] Le Business Model est publié, propre et bien présenté  
+  - [X] Il couvre tout les aspects cités dans le [support de cours](https://github.com/ETML-INF/254-ProcessusMetier/blob/main/b-UnitesEnseignement/ECOE/S-254-PrincipesECOE.pdf)  
+  - [X] Il totalise un minimum de 500 mots  
 
 Business Plan
 <hr>
@@ -61,4 +61,4 @@ Résultat:
 - Corrigez ces deux erreurs avant mardi 10 juin à 10h, faute de quoi le projet ne pourra pas être validé
 
 
-## _Projet non validé à ce stade_
+## _Projet validé_
