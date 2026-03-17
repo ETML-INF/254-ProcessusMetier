@@ -1,3 +1,5 @@
+Archivage de l'édition 2025 de ce module par XCL avec la classe FID1
+
 # 254-ProcessusMetier
 
 Le chemin vers le succès est tracé [ici](https://roadmap.sh/r/embed?id=67c07477580201fc7743a886)
@@ -44,11 +46,11 @@ Le fournisseur unique de composants pour les entreprises locales est l'[ETML Sto
 
 Vous pouvez payer vos achats sur le store avec la carte de crédit magique:
 
-|||  
-|---|---|  
-| Numéro| 4242 4242 4242 4242|  
-| Date de validité| 12/34|  
-| CVC| 123|  
+|                  |                     |
+| ---------------- | ------------------- |
+| Numéro           | 4242 4242 4242 4242 |
+| Date de validité | 12/34               |
+| CVC              | 123                 |
 ## Odoo
 
 - Inscrivez-vous sur [Odoo](https://www.odoo.com/fr_FR) avec votre email **`prénom.nom@eduvaud.ch`** (et **PAS** `px23trd@eduvaud.ch`)
