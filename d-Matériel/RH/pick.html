@@ -1,0 +1,212 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Pick / Group / Shuffle</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+
+      .item {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        list-style-type: none;
+      }
+
+      .discarded {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: left;
+        text-decoration: line-through;
+        color: #cccccc;
+        list-style-type: none;
+      }
+
+      .selected {
+        background-color: #32db64;
+        font-size: xx-large;
+        font-weight: bold;
+        text-align: center;
+        list-style-type: none;
+      }
+
+      input {
+        height: 30px;
+        width: 30px;
+        border: none;
+        text-align: center;
+        font-size: large;
+      }
+
+      button {
+        background-color: #24a;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 15px 32px;
+        margin: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      div {
+        text-align: center;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .d-none {
+        display: none;
+      }
+    </style>
+    <script src="pickdata.js"></script>
+    <!-- Pick functions -->
+    <script>
+      function strikeOne() {
+        els = document.getElementsByTagName("li");
+        var selel = Math.trunc(Math.random() * els.length); // Pick one to remove from list
+        els[selel].className = "discarded"; // Remove by tagging with classname
+
+        // Count how many are left in the list
+        var nbleft = 0;
+        for (i = 0; i < els.length; i++) {
+          if (els[i].className == "item") {
+            nbleft++;
+          }
+        }
+        if (nbleft <= document.getElementById("nb").value)
+          // Only one survivor
+          setTimeout(() => {
+            // Wait a bit ... just for show
+            for (i = 0; i < els.length; i++) {
+              if (els[i].className == "item") {
+                els[i].className = "selected"; // Highlight the winner(s)
+              }
+            }
+          }, 500);
+        // more than one left
+        else
+          setTimeout(() => {
+            strikeOne(); // continue  ...
+          }, 200);
+      }
+
+      function start() {
+        document.getElementById("divSelect").style.display = "none";
+        setTimeout(() => {
+          // Wait a bit before starting
+          strikeOne();
+        }, 1000);
+      }
+    </script>
+
+    <!-- Group functions -->
+    <script>
+      var nbGroups;
+      var currentGroup = 1;
+
+      function makeGroups() {
+        document.getElementById("divSelect").style.display = "none";
+        document.getElementById("divList").style.display = "none";
+        nbGroups = numGroups.value;
+        for (i = 1; i <= nbGroups; i++) {
+          grp = document.createElement("div");
+          grp.id = "group" + i;
+          grp.classList.add("row");
+          grpnbr = document.createElement("h4");
+          grpnbr.innerText = "Groupe " + i;
+          grp.appendChild(grpnbr);
+          divGroups.appendChild(grp);
+        }
+
+        setTimeout(() => {
+          // Wait a bit before starting
+          drawOne();
+        }, 1000);
+      }
+
+      function drawOne() {
+        els = document.getElementsByClassName("item");
+        var selel = Math.trunc(Math.random() * els.length); // Pick one to remove from list
+        pers = document.createElement("div");
+        pers.innerText = els[selel].innerText;
+        pers.classList.add("personingroup");
+        document.getElementById("group" + currentGroup).appendChild(pers);
+        currentGroup = (currentGroup % nbGroups) + 1;
+        els[selel].remove();
+
+        if (els.length > 0)
+          setTimeout(() => {
+            drawOne(); // continue  ...
+          }, 500);
+      }
+    </script>
+
+    <!-- Shuffle functions -->
+    <script>
+      var keepgoing = true;
+      function shuffle() {
+        els = document.getElementsByClassName("item");
+        document.getElementById("divSelect").style.display = "none";
+        btnStopShuffling.classList.remove("d-none");
+        if (keepgoing) {
+          let selel = els[Math.trunc(Math.random() * els.length)]; // Pick one to move in list
+          let targetel = els[Math.trunc(Math.random() * els.length)]; // Pick location
+          divList.insertBefore(selel, targetel);
+          divList.insertBefore(els[0], els[els.length]); // rotate to keep changing extremities (looks more random)
+          setTimeout(() => {
+            // Wait a bit before starting
+            shuffle();
+          }, 20);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="row" id="divSelect">
+      <div>
+        Sélectionner <input id="nb" type="number" value="1" /> personnes ,
+        <button onclick="start()">On y va!</button>
+      </div>
+      <div>
+        Nombre de groupes <input id="numGroups" type="number" value="2" /> ,
+        <button onclick="makeGroups()">On y va!</button>
+      </div>
+      <div>
+        Mélanger ,
+        <button onclick="shuffle()">On y va!</button>
+      </div>
+    </div>
+    <div class="row">
+      <button id="btnStopShuffling" onclick="keepgoing = false" class="d-none">Stop</button>
+    </div>
+    <div id="divList"></div>
+    <div id="divGroups" class="column"></div>
+  </body>
+  <script>
+    // Prepare page
+    if (typeof pickdata == "undefined") {
+      alert("Aucune données fournie");
+    } else {
+      pickdata.forEach((item) => {
+        let li = document.createElement("li");
+        li.classList.add("item");
+        li.innerText = item;
+        divList.appendChild(li);
+      });
+    }
+
+    // Allow to remove some people from the list by clicking them out
+    lis = document.getElementsByTagName("li");
+    for (i = 0; i < lis.length; i++)
+      lis[i].addEventListener("click", function (ev) {
+        ev.target.remove();
+      });
+  </script>
+</html>
