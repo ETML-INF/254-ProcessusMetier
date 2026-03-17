@@ -1,42 +1,59 @@
-# 254-ProcessusMetier
+# ICT 254-Décrire les processus métier
 
-Le chemin vers le succès est tracé [ici](https://roadmap.sh/r/embed?id=67c07477580201fc7743a886)
+Un processus métier est un ensemble structuré d'activités, d'évènements et de décisions établi par une organisation afin de produire un résultat spécifique qui crée de la valeur.
+
+Les buts formels du module (définis par ICT) sont:
+
+1. Identifier les informations pertinentes du processus
+2. Représenter graphiquement le flux du processus à l'aide de normes de description acceptées et courantes
+3. Spécifier le déroulement du processus
+4. Divise les processus opérationnels en processus techniques et organisationnels
+
+Nous allons enrichir ce contenu avec les objectifs suivants:
+
+1. Comprendre les principes de bases de l'économie qui déterminent le fonctionnement d'une entreprise
+2. Découvrir et mettre en oeuvre le concept d'Enterprise Resource Planner (ERP), indispensable aux opérations quotidiennes d'une entreprise
+
+Concrètement, vous allez devoir réussir quatre missions:
+
+### Connaissances de base en économie d'entreprise
+
+Vous allez devoir démontrer avoir compris les thèmes suivants:
+- Formes juridiques
+- Organigrammes
+- Centres de profit/coût
+- Notions financières
+  - Achat
+  - Vente
+  - Chiffre d'affaire
+  - Bénéfice
+  - Imposition
+- Business Model
+- Business Plan
+
+### Maîtrise du BPMN
+
+Le Business Process Model and Notation est un langage graphique conçu pour modéliser les processus métier.  
+Vous allez devoir démontrer votre capacité à comprendre et à créer un schéma BPMN
+
+### Pitch
+
+La démonstration de vos compétences se fera notamment au travers d'un pitch de l'entreprise que vous allez fonder durant le projet
+
+### ERP (projet)
+
+Vous allez créer une entreprise et l'organiser autour de votre ERP Odoo
+
+
 
 ## Le marché local du jeu de plateau
-### Neon Rift Games : Night Run ([ERP](https://edu-neonriftgames.odoo.com/odoo))  
-Maël  
-Matias  
-Brendan  
-<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/NeonRiftGames/Neon%20Rift%20Games.md)</small>
 
-### NewGame+ : Profemon ([ERP](https://edu-newgameplus.odoo.com/odoo))  
-Francisco  
-Nelson  
-Mina  
-<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/NewGame+/NewGame+.md)</small>
-
-### Swisscraft : Warhammer ([ERP](https://edu-swisscraft.odoo.com/odoo))  
-Meron  
-Christopher  
-Somchai  
-<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/SwissCraft/SwissCraft.md)</small>
-
-### Titan Motors : F1 Racing ([ERP](https://edu-titanmotors.odoo.com/odoo))  
-Theo  
-Diogo  
-Jessica  
-<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/TitanMotors/Titan%20Motors.md)</small>
-
-### Unko Games: Crash Octopus ([ERP](https://edu-unkogames.odoo.com/odoo))  
-Luca  
-Veronika  
-<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/UnkoGames/UnkoGames.md)</small>
-
-### Big Boy Game: Granma's will ([ERP](https://edu-bigboygames.odoo.com/odoo))  
-Vincent  
-Rayan  
-<small>[Status final](b-UnitesEnseignement/Suivi%20FID1/BigBoyGame/Big%20Boy%20Game.md)</small>
-
+Les 5 jeux à produire sont:
+1. 3D Chess. Deux plateaux de quatre sur quatre sont superposés. Les pièces standards des échecs sont disposées aux deux étages. Deux pastilles de téléportation (une par niveau) permettent de changer d'étage.
+1. Intempéries
+1. Puissance 6
+1. Granma's will
+1. Scrabbbbble
 
 ## Fournitures
 
@@ -44,11 +61,11 @@ Le fournisseur unique de composants pour les entreprises locales est l'[ETML Sto
 
 Vous pouvez payer vos achats sur le store avec la carte de crédit magique:
 
-|||  
-|---|---|  
-| Numéro| 4242 4242 4242 4242|  
-| Date de validité| 12/34|  
-| CVC| 123|  
+|                  |                     |
+| ---------------- | ------------------- |
+| Numéro           | 4242 4242 4242 4242 |
+| Date de validité | 12/34               |
+| CVC              | 123                 |
 ## Odoo
 
 - Inscrivez-vous sur [Odoo](https://www.odoo.com/fr_FR) avec votre email **`prénom.nom@eduvaud.ch`** (et **PAS** `px23trd@eduvaud.ch`)
