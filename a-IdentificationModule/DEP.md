@@ -11,7 +11,7 @@ L'évaluation est basée sur 2 Eléments:
 
 Compléments d'information:
 - Une absence lors du test écrit doit impérativement être justifiée par un document officiel (certificat médical, convocation, ...). Le rattrapage se fait un samedi matin
-- Les aides mémoire personnels utilisés lors du test théorique sera remis avec le test.
+- Les aides mémoire personnels utilisés lors du test théorique doivent être remis avec le test.
 - Si une remédiation devait s'avérer nécessaire et justifiée:
   - Elle se ferait un samedi matin
   - Elle ne peut compenser qu'un maximum de 20% de la note (donc 1 point)
