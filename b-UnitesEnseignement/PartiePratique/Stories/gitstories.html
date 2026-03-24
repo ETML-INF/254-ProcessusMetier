@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">User Stories par GitHub issues</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      input,
+      button {
+        margin: 5px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f4f4f4;
+      }
+
+      ul,
+      ol,
+      li {
+        margin: 5px;
+        list-style-type: none;
+      }
+
+      .patched {
+        background-color: cornsilk;
+      }
+
+      .linked {
+        cursor: pointer;
+      }
+
+      .date-header {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-top: 20px;
+      }
+
+      .d-none {
+        display: none;
+      }
+
+      .topButton {
+        border: 1px solid black;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        padding: 5px;
+        text-align: center;
+        background-color: lightgray;
+        float: right;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+
+      @media print {
+        .no-print,
+        .no-print * {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="divHelpButton" class="topButton no-print" onclick="toggleHelp()">?</div>
+    <div id="divAddButton" class="topButton no-print" onclick="toggleHelp()">+</div>
+    <h1 id="project-title">User stories tirées d'issues GitHub</h1>
+    <div id="inputZone">
+      <div id="defaultMode" class="d-none">
+        <div id="txtDefaultRepo"></div>
+      </div>
+      <div id="selectMode" class="d-none">
+        <select id="dpdProjects"></select>
+      </div>
+      <button id="cmdGo" onclick="fetchIssues()" class="d-none">Ok</button>
+    </div>
+    <div id="divLogs"></div>
+    <div id="divContent"></div>
+  </body>
+</html>
+
+<script src=".config.js"></script>
+<script>
+  var repoUrl = "?";
+  initialize();
+
+  async function initialize() {
+    /// Initialize inputs with defaults from config file
+    if (typeof defaultRepo != "undefined") {
+      defaultMode.classList.remove("d-none");
+      txtDefaultRepo.innerText = typeof defaultRepo.alias != "undefined" ? defaultRepo.alias : defaultRepo.url;
+      repoUrl = defaultRepo.url;
+      await fetchIssues();
+    } else if (typeof repos != "undefined") {
+      selectMode.classList.remove("d-none");
+      initDropdown();
+    }
+  }
+
+  // intersect arrays. source: GPT
+  function haveCommonString(arr1, arr2) {
+    if (arr2.length == 0) return true; // no filter
+    const set1 = new Set(arr1);
+    return arr2.some((str) => set1.has(str));
+  }
+
+  async function fetchIssues() {
+    const authToken = defaultAuthToken;
+
+    // Extraire l'utilisateur et le nom du repository depuis l'URL
+    const repoMatch = repoUrl.match(/github\.com\/([^/]+)\/([^/]+)/);
+    if (!repoMatch) {
+      divLogs.innerHTML = '<p style="color: red;">URL du repository GitHub invalide.</p>';
+      return;
+    }
+    const [_, owner, repo] = repoMatch;
+
+    document.getElementById("inputZone").classList.add("d-none");
+
+    try {
+      // Mise à jour des titres
+      document.getElementById("page-title").innerText = `User stories ${repo}`;
+      document.getElementById("project-title").innerText = `User Stories de ${repo}`;
+
+      // Récupérer les issues depuis l'API GitHub
+
+      const allIssues = await getAllIssues(owner, repo, defaultAuthToken);
+      const stories = await allIssues.filter((i) =>
+        haveCommonString(
+          i.labels.map((l) => l.name),
+          filterTags
+        )
+      );
+      const allStoriesHTML = stories.map((issue) => toHtml(issue));
+
+      if (allStoriesHTML.length === 0) {
+        divLogs.innerHTML = "<p>Aucune story trouvée</p>";
+        return;
+      }
+
+      divContent.innerHTML = allStoriesHTML.join("");
+    } catch (error) {
+      divLogs.innerHTML = `<p style="color: red;">Erreur : ${error.message}</p>`;
+    }
+  }
+
+  async function getAllIssues(owner, repo, authToken) {
+    let page = 1;
+    let hasMore = true;
+    let res = [];
+
+    while (hasMore) {
+      const apiUrl = `https://api.github.com/repos/${owner}/${repo}/issues?per_page=100&page=${page}`;
+
+      const response = await fetch(apiUrl, {
+        headers: { Authorization: `Bearer ${authToken}` }
+      });
+
+      if (!response.ok) {
+        console.error("Erreur lors de la récupération des issues:", response.status);
+        return;
+      }
+
+      const issues = await response.json();
+      res = res.concat(issues);
+      hasMore = issues.length === 100;
+      page++;
+    }
+    return res;
+  }
+  /// Extracts information from the commit description and make them available as fields of the commit object
+  function toHtml(issue) {
+    if (!issue.body) return;
+    const description = DOMPurify.sanitize(marked.parse(issue.body));
+    return `<hr><div><h3>${issue.title}</h3><p>${description}</p></div>`;
+  }
+
+  /// Prepare the repos selection dropdown
+  function initDropdown() {
+    if (typeof repos != "undefined" && repos.length > 0) {
+      dpdProjects.innerHTML =
+        `<option>--- Choisir ---</option>` +
+        repos.map((r) => `<option value=${r.url}>${r.alias ? r.alias : "r.url"}</option>`);
+    } else {
+      cmdGo.classList.remove("d-none");
+    }
+
+    // Launch action on change
+    dpdProjects.addEventListener("change", async () => {
+      repoUrl = dpdProjects.value;
+      await fetchIssues();
+      const selectedRepo = repos.find((r) => r.url == dpdProjects.value);
+    });
+  }
+</script>
